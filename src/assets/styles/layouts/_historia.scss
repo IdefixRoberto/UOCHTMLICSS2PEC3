@@ -1,0 +1,40 @@
+
+//Per a fer l'efecte de focalització del premi
+.trofeus-container {
+  display: flex;
+  column-gap: 2rem;
+  max-width: 100%;
+  background-color: $graylight;
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+  }
+  
+  &__individual {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    width: fit-content;
+    margin: 3vh; 
+    color: $white;
+    cursor: pointer;
+    transition: transform 0.25s ease-in, opacity 0.25s ease-in, filter 0.25s ease-in;
+ 
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+ 
+  }
+
+  &:has(.trofeus-container__individual--imatge:hover) .trofeus-container__individual--imatge:not(:hover) {
+    filter: blur(6px);
+    opacity: 0.8;
+    scale: 0.8;
+  }
+}
+
+
+
+  
+

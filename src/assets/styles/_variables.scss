@@ -1,0 +1,48 @@
+@use "sass:color";
+//Configuració inicial
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-family-serif: "Georgia", "Times New Roman", serif;
+$font-family-TitilliumWeb: "Titillium Web",  'Comic Neue', sans-serif;
+$font-family-Comic: 'Comic Neue', "Times New Roman", serif;
+
+$fonsPantalla: #dcdcdc;
+$main-color: #ffbc00;
+$light-color: #f4f4f4;
+$dark-color: #333;
+$medium-color: #ccc;
+$color-secundari:  #fff;
+$gray: #5a5a5a;
+$blue: #0000FF;
+$orange: #FFA500;
+$red: #FF0000;
+$tomaca: #FF6347;
+$lightblue: #ADD8E6;
+$uoc-masterbrand: #73edff;
+$tablet: 900px; 
+$phone: 600px;
+$gray: #808080;
+$blue: #0000FF;
+$orange: #FFA500;
+$red: color.hwb(0deg,0%,0%);
+$tomaca: #FF6347;
+$lightblue: #ADD8E6;
+$graylight: #8080807a;
+$white: color.hwb(0deg,95.68627450980392%,4.313725490196077%);
+$light-green: #53ff95;
+$green: #045423;
+$light-color: #f8f9fa;
+$groc: color.hwb(0deg,35%,0%);
+$taronja: #ffa751;
+$cirera: #952F57;
+$bluelight: #9191ff;
+$morat: #572364;
+$moratlight: #f3c5ff;
+$claret:  #fee9e9a5;
+$color2: color.hwb(29.655, 32%, 0%);
+$gold: #FFD700;
+$aliceblue: color.hwb(208, 94%, 0%);
+$yellow: color.hwb(60, 50%, 0%);
+$indigo: color.hwb(275, 100%, 25%);
+$violet: color.hwb(274.6, 100%, 51%);

@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.header-left {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-right {
+    display: flex;
+    gap: 20px;
+}
+
+.header-right a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header-right a:hover {
+    background-color: black;
+    color: white;
+}
+
+main {
+    width: 90vw;
+    margin: 10vh auto 0 auto;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.subheading {
+    color: lightgray;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.recipes-section {
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 5vh 0;
+}
+
+.card {
+    width: 23vw;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px lightgray;
+}
+
+.card h3 {
+    text-align: left;
+    font-weight: bold;
+}
+
+.card-content {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.card-image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.card-text h4 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card-text p {
+    color: lightgray;
+}
+
+footer {
+    border-top: 1px solid gray;
+    padding: 5%;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-left div:first-child {
+    font-weight: bold;
+}
+
+.social-icons i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.footer-right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 3%;
+}
+
+.footer-right div {
+    text-align: center;
+    margin: 5%;
+}
+
+.footer-right{
+    width: 50%;
+    
+}
+

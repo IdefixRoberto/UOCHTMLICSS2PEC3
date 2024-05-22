@@ -1,0 +1,102 @@
+@import 'variables';
+@import './output.css';
+@import '../styles/layouts/historia';
+@import '../styles/layouts/vall';
+
+/*
+Importe les directives de Tailwind
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  &:hover {
+    color: $cirera;
+    transform: scale(105%);
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: $font-family-TitilliumWeb;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  background-color: $fonsPantalla;
+}
+
+main, header {
+  flex-shrink: 0; /* Fa que el 'main' ocupi tot l'espai restant */
+}
+
+footer {
+  flex-grow: 1; /* Evita que el footer s'ampliï */
+}
+
+/* Arregle els hipervincles */
+a {
+  color: $dark-color;
+  text-decoration: none;
+}
+
+/* Configure les llistes */
+ul {
+  list-style: none;
+}
+
+/* Els titiols estaràn en majuscules */
+h2 {
+  font-size: 2rem;
+  &:hover {
+    color: $green;
+    transform: scale(105%);
+  }
+}
+
+/* Configuració del logo */
+#logo {
+  width: 100px;
+  height: 60px;
+}
+
+footer, header {
+  background-color: $gray;
+}
+
+//@apply
+
+/* Apply custom styles */
+.trofeus-container {
+  @apply flex flex-wrap gap-8 justify-center mt-8 bg-gray-200 p-4;
+}
+
+.trofeus-container__individual {
+  @apply w-full tablet:w-4/5 sm:w-1/2 lg:w-1/4 flex flex-col items-center bg-secondary text-white p-4 rounded-xl transition-transform transform hover:scale-105 cursor-pointer;
+}
+
+.trofeus-container__individual--imatge {
+  @apply max-w-full h-auto;
+}
+
+.VallGallinera__h1 {
+  @apply w-0 my-4 overflow-hidden text-center whitespace-nowrap border-r-2 border-transparent font-comic animate-typing 
+
+  @media (max-width: $phone) {
+    @apply text-lg;
+  }
+}

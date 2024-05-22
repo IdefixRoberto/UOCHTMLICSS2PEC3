@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="./assets/styles/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,400;0,600;0,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   
+    <title>Sabors de la Vall</title>
+
+</head>
+<body>
+  
+    <include src="./views/header.html"></include>
+  
+    <main>
+      <h1 class="text-center m-3 text-4xl font-comic">Sabors de la Vall</h1>
+      <article class="mx-auto p-5 w-4/5">
+        <!-- Concurs-->
+        <include src="./views/historia/concurs.html"></include>
+        <!-- Premis-->
+        <include src="./views/historia/premis.html"></include>
+        <!-- Passat Present i futur de la vall-->
+        <include src="./views/historia/passat.html"></include>
+        <!-- Activitats -->
+        <include src="./views/historia/activitats.html"></include>
+        <!-- Viatjar-->
+        <include src="./views/historia/viatjar.html"></include>
+      </article>
+    </main>
+    
+  
+
+<footer>
+  <include src="./views/footer.html"></include>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="./assets/scripts/grafic.js"></script><!-- do not remove this line! -->
+  </body>
+</html>
+

@@ -1,0 +1,191 @@
+@charset "UTF-8";
+@import './output.css';
+.trofeus-container {
+  display: flex;
+  column-gap: 2rem;
+  max-width: 100%;
+  background-color: rgba(128, 128, 128, 0.4784313725);
+}
+@media (max-width: 900px) {
+  .trofeus-container {
+    flex-direction: column;
+  }
+}
+.trofeus-container__individual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  margin: 3vh;
+  color: #f4f4f4;
+  cursor: pointer;
+  transition: transform 0.25s ease-in, opacity 0.25s ease-in, filter 0.25s ease-in;
+}
+.trofeus-container__individual img {
+  max-width: 100%;
+  height: auto;
+}
+.trofeus-container:has(.trofeus-container__individual--imatge:hover) .trofeus-container__individual--imatge:not(:hover) {
+  filter: blur(6px);
+  opacity: 0.8;
+  scale: 0.8;
+}
+
+.vall-info .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.vall-info .section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.vall-info .boto-line {
+  height: 0.25rem;
+  background-color: #808080;
+  margin-bottom: 2rem;
+}
+.vall-info .vall-info__process {
+  display: flex;
+  justify-content: space-between;
+}
+.vall-info .vall-info__process__icon {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+.vall-info .vall-info__process__step {
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.25rem 0.5rem;
+  position: absolute;
+  top: -0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*
+Importe les directives de Tailwind
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Apply custom styles */
+.trofeus-container {
+  @apply flex flex-wrap gap-8 justify-center mt-8 bg-gray-200 p-4;
+}
+
+.trofeus-container__individual {
+  @apply w-full tablet:w-4/5 sm:w-1/2 lg:w-1/4 flex flex-col items-center bg-secondary text-white p-4 rounded-xl transition-transform transform hover:scale-105 cursor-pointer;
+}
+
+.trofeus-container__individual--imatge {
+  @apply max-w-full h-auto;
+}
+
+.card-base {
+  @apply h-full text-center bg-white shadow-lg rounded-xl overflow-hidden transform transition-transform hover:scale-105;
+}
+
+.icon-base {
+  @apply text-gray-700 transition-all;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h1:hover {
+  color: #952F57;
+  transform: scale(105%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Titillium Web", "Comic Neue", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  background-color: #dcdcdc;
+}
+
+main, header {
+  flex-shrink: 0; /* Fa que el 'main' ocupi tot l'espai restant */
+}
+
+footer {
+  flex-grow: 1; /* Evita que el footer s'ampliï */
+}
+
+/* Arregle els hipervincles */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Configure les llistes */
+ul {
+  list-style: none;
+}
+
+/* Els titiols estaràn en majuscules */
+h2 {
+  font-size: 2rem;
+}
+h2:hover {
+  color: #045423;
+  transform: scale(105%);
+}
+
+/* Configuració del logo */
+#logo {
+  width: 100px;
+  height: 60px;
+}
+
+footer, header {
+  background-color: #808080;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #333;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+.VallGallinera__h1 {
+  width: 0;
+  margin: 4% 0;
+  overflow: hidden; /* Oculta el text fora del contenidor */
+  font-family: "Comic Neue", "Times New Roman", serif;
+  font-size: 2.5rem;
+  text-align: center;
+  white-space: nowrap;
+  border-right: 0.15em solid transparent; /* Simula el cursor parpadejant */
+  animation: typing 6s steps(30, end) forwards, blink-caret 0.5s step-end 5;
+}
+@media (max-width: 600px) {
+  .VallGallinera__h1 {
+    font-size: 1.6rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
